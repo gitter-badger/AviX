@@ -250,7 +250,7 @@ cd ~/Downloads
 wget -c http://reaper.fm/files/5.x/reaper504_x64-install.exe
 wine ~/Downloads/reaper504_x64-install.exe /S
 # Set launcher
-wget -c https://www.dropbox.com/s/t8wagkqu8q1r8yn/reaper.png
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/artwork/reaper.png
 cp -v ~/Downloads/reaper.png ~/.local/share/icons/
 wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/data/REAPER%20%28x64%29.desktop
 sudo cp -v ~/Downloads/REAPER\ \(x64\).desktop /usr/share/applications/

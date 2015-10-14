@@ -1,4 +1,4 @@
-<img src="https://avix.userecho.com/s/attachments/17534/45980/2050327/26ddcf5afbd6ce27c09926544a9205ac.png">
+<img src="https://raw.githubusercontent.com/rauldipeas/AviX/master/artwork/screenshots/Espa%C3%A7o%20de%20Trabalho%201_004.png">
 
 O <b>AviX</b> é um script que prepara o <b>Ubuntu</b> para criação de conteúdo multimídia, para isso trás ferramentas de áudio, vídeo e imagem, oferecendo os melhores softwares disponíveis para esse propósito.
 

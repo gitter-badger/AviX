@@ -610,7 +610,7 @@ echo 'msgstr "Área de trabalho"' | tee -a unity.po
 sudo msgfmt -o /usr/share/locale/pt_BR/LC_MESSAGES/unity.mo unity.po
 # System details
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/x3vzkzawl423fnu/UbuntuLogo.png
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/artwork/UbuntuLogo.png
 sudo cp -v ~/Downloads/UbuntuLogo.png /usr/share/unity-control-center/ui/UbuntuLogo.png
 # Remove LightDM Unity greeter logo
 sudo rm -v /usr/share/unity-greeter/logo.png

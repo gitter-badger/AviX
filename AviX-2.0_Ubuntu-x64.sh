@@ -823,7 +823,7 @@ gsettings set org.gnome.desktop.interface buttons-have-icons true
 ##############################################################################################################################################################################################################################################################
 # Set Fonts
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/bgrwotcl566kgu4/fonts.zip
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/fonts.zip
 unzip ~/Downloads/fonts.zip
 sudo mkdir -p -v /usr/share/fonts/avix
 sudo cp -R -v ~/Downloads/fonts/* /usr/share/fonts/avix/

@@ -601,7 +601,7 @@ mv -v ~/Downloads/Wowpeiper.jpg ~/Imagens/Wallpapers/avix-wallpaper.jpg
 gsettings set org.gnome.desktop.background picture-uri file:///$HOME/Imagens/Wallpapers/avix-wallpaper.jpg
 # Unity dash icon
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/s2d6n3606rtkuus/launcher_bfb.png
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/artwork/launcher_bfb.png
 sudo cp -v ~/Downloads/launcher_bfb.png /usr/share/unity/icons/launcher_bfb.png
 # Unity desktop name
 cd ~/Downloads

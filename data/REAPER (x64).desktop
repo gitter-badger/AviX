@@ -1,0 +1,26 @@
+[Desktop Entry]
+Name=REAPER (x64)
+Exec=/opt/reaper/reaper.sh %f
+Type=Application
+StartupNotify=true
+Icon=reaper
+StartupWMClass=reaper.exe
+MimeType=application/x-wine-extension-rpp;application/x-wine-extension-rpp-bak;application/x-wine-extension-reaperthemezip;
+Categories=AudioVideo;
+
+X-Ayatana-Desktop-Shortcuts=REAPERNewProject;REAPERShowAudioConfig;ReaMote;
+
+[REAPERNewProject Shortcut Group]
+Name=REAPER (x64) (create new project)
+Exec=wine .wine/drive_c/Program\ Files/REAPER\ \(x64\)/reaper.exe -new
+TargetEnvironment=Unity
+
+[REAPERShowAudioConfig Shortcut Group]
+Name=REAPER (x64) (show audio configuration on startup)
+Exec=wine .wine/drive_c/Program\ Files/REAPER\ \(x64\)/reaper.exe -audiocfg
+TargetEnvironment=Unity
+
+[ReaMote Shortcut Group]
+Name=ReaMote Slave (x64)
+Exec=wine .wine/drive_c/Program\ Files/REAPER\ \(x64\)/reamote.exe
+ProgramsTargetEnvironment=Unity

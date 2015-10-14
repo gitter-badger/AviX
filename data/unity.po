@@ -1,0 +1,2 @@
+msgid "Ubuntu Desktop"
+msgstr "Área de trabalho"

@@ -1,0 +1,20 @@
+{
+    "autokill_daemon": 1,
+    "autostart_daemon": 1,
+    "daemon_priority": 0,
+    "folder_as_path": true,
+    "force_dark_theme": false,
+    "icons_in_menu": true,
+    "infobox_style": "font_weight=\"bold\" font_size=\"large\"",
+    "last_updatecheck": "1969-12-31T21:00:01",
+    "max_cpus": 0,
+    "minimize_on_start": true,
+    "notification_for_error": true,
+    "notification_for_folder": true,
+    "notification_for_update": true,
+    "st_autoupdate": false,
+    "syncthing_binary": "/usr/bin/syncthing",
+    "use_inotify": [],
+    "use_old_header": true,
+    "window_position": null
+}

@@ -1,0 +1,34 @@
+[card-0]
+control = Master
+
+[card-1]
+control = Master
+
+[card-2]
+control = Master
+
+[card-3]
+control = Master
+
+[card-4]
+control = Master
+
+[global]
+mixer_show_values = 1
+scale_increment = 5.0
+icon_theme = Default
+scale_show_value = 0
+mixer = qasmixer
+show_tooltip = 1
+notify_position = 0
+keys = 1
+toggle = mute
+mixer_internal = 0
+notify_body = <span font_desc="14" weight="bold">{volume}</span>
+	<small>{card}</small>
+	<small>{mixer}</small>
+keys_backend = xlib
+run_in_terminal = 0
+notify_timeout = 2.0
+show_notify = 1
+

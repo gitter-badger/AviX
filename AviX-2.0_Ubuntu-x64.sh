@@ -252,7 +252,7 @@ wine ~/Downloads/reaper504_x64-install.exe /S
 # Set launcher
 wget -c https://www.dropbox.com/s/t8wagkqu8q1r8yn/reaper.png
 cp -v ~/Downloads/reaper.png ~/.local/share/icons/
-wget -c https://www.dropbox.com/s/j7kh4z4ifvzb3uj/REAPER%20%28x64%29.desktop
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/data/REAPER%20%28x64%29.desktop
 sudo cp -v ~/Downloads/REAPER\ \(x64\).desktop /usr/share/applications/
 echo '' | tee -a $HOME/.local/share/applications/wine/Programs/REAPER\ \(x64\)/ReaMote\ Slave\ \(x64\).desktop
 echo 'StartupWMClass=reamote.exe' | tee -a $HOME/.local/share/applications/wine/Programs/REAPER\ \(x64\)/ReaMote\ Slave\ \(x64\).desktop

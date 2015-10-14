@@ -501,7 +501,7 @@ echo '</channel>' | tee -a ~/.config/xfce4/xfconf/xfce-perchannel-xml/parole.xml
 # GIMP settings
 # ~/.gimp-2.8
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/ioyicumcuncw775/gimp-2.8.zip
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/gimp-2.8.zip
 unzip ~/Downloads/gimp-2.8.zip
 mkdir -p -v ~/.gimp-2.8
 cp -R -v ~/Downloads/gimp-2.8/* ~/.gimp-2.8

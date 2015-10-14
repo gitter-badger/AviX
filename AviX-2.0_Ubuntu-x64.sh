@@ -591,7 +591,7 @@ sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu Wily Werewolf (development branch)"/D
 sudo sed -i 's/-i\ -s/-d\ -s/g' /etc/default/grub
 # Plymouth theme
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/o3o2d4vnj06le3j/avix-plymouth_2.0_all.deb
+wget -c https://www.dropbox.com/s/ahxprokpv0ls6ed/avix-plymouth_2.0_all.deb
 sudo dpkg -i ~/Downloads/avix-plymouth_2.0_all.deb
 # Wallpaper
 cd ~/Downloads

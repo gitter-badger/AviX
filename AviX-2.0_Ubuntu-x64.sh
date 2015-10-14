@@ -262,7 +262,7 @@ rm -v ~/Área\ de\ trabalho/REAPER\ \(x64\).desktop
 sudo mkdir -p -v /opt/reaper
 sudo chmod 777 -v /opt/reaper
 sudo chown $USER -v /opt/reaper
-wget -c https://www.dropbox.com/s/tsmeh9qncxzd49o/reaper.sh
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/data/reaper.sh
 cp -v ~/Downloads/reaper.sh /opt/reaper/
 chmod +x /opt/reaper/reaper.sh
 ln -s -v ~/.wine /opt/reaper/

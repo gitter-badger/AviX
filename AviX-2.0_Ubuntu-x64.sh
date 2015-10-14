@@ -560,7 +560,7 @@ sudo sed -i 's/Name\[pt_BR\]=Sessão do Xfce/Name\[pt_BR\]=AviX (XFCE)/g' /usr/s
 # XFCE desktop configs
 # ~/.config/xfce4 + ~/.config/compton.conf + ~/.config/Trolltech.conf
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/rqugd7c5bgcgwm9/xfce%2Bcompton%2Bqtconfig-settings.zip
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/xfce%2Bcompton%2Bqtconfig-settings.zip
 unzip ~/Downloads/xfce+compton+qtconfig-settings.zip
 cp -R -v ~/Downloads/xfce+compton+qtconfig-settings/* ~/.config/
 # /etc/xdg/autostart/qasmixer.desktop #XFCE TMP_FIX

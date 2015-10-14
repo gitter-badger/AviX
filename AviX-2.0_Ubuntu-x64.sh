@@ -575,7 +575,7 @@ echo 'OnlyShowIn=Unity;' | sudo tee -a /etc/xdg/autostart/haguichi-autostart.des
 # Keep configurations of the APT packages against new defaults from update
 # /etc/apt/apt.conf
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/w6arvgjlghh2c8d/apt.conf
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/data/apt.conf
 sudo cp -R -v ~/Downloads/apt.conf /etc/apt/apt.conf
 ##############################################################################################################################################################################################################################################################
 # AviX branding

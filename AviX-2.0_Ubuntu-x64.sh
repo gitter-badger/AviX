@@ -595,7 +595,7 @@ wget -c https://www.dropbox.com/s/o3o2d4vnj06le3j/avix-plymouth_2.0_all.deb
 sudo dpkg -i ~/Downloads/avix-plymouth_2.0_all.deb
 # Wallpaper
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/fucnyqmgmrcvxu2/Wowpeiper.jpg
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/artwork/Wowpeiper.jpg
 mkdir -p -v ~/Imagens/Wallpapers
 mv -v ~/Downloads/Wowpeiper.jpg ~/Imagens/Wallpapers/avix-wallpaper.jpg
 gsettings set org.gnome.desktop.background picture-uri file:///$HOME/Imagens/Wallpapers/avix-wallpaper.jpg

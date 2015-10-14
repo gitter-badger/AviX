@@ -669,35 +669,35 @@ sudo sed -i 's/Name=tuxguitar/Name=TuxGuitar/g' /usr/share/applications/tuxguita
 # Set Folder Icons
 # Dropbox
 mkdir -p -v ~/Dropbox
-gvfs-set-attribute ~/Dropbox/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/blue-folder-dropbox.svg
+gvfs-set-attribute ~/Dropbox/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/blue-folder-dropbox.svg
 # MEOCloud
 mkdir -p -v ~/MEOCloud
-gvfs-set-attribute ~/MEOCloud/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/blue-folder-cloud.svg
+gvfs-set-attribute ~/MEOCloud/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/blue-folder-cloud.svg
 # Copy
 mkdir -p -v ~/Copy
-gvfs-set-attribute ~/Copy/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/blue-folder-hdd.svg
+gvfs-set-attribute ~/Copy/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/blue-folder-hdd.svg
 # Plugins VST (Wine)
 mkdir -p -v ~/Plugins\ VST
-gvfs-set-attribute ~/Plugins\ VST/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/green-folder-system.svg
+gvfs-set-attribute ~/Plugins\ VST/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/green-folder-system.svg
 # VirtualBox
 mkdir -p -v ~/VirtualBox\ VMs
-gvfs-set-attribute ~/VirtualBox\ VMs/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/blue-folder-vm.svg
+gvfs-set-attribute ~/VirtualBox\ VMs/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/blue-folder-vm.svg
 # Projetos
 mkdir -p -v ~/Projetos
 ln -s -v ~/Projetos ~/Copy/
-gvfs-set-attribute ~/Projetos/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/red-folder-projects.svg
+gvfs-set-attribute ~/Projetos/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/red-folder-projects.svg
 # Steam
 mkdir -p -v ~/Steam
-gvfs-set-attribute ~/Steam/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/grey-folder-steam.svg
+gvfs-set-attribute ~/Steam/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/grey-folder-steam.svg
 # Sync (Synchhing)
 mkdir -p -v ~/Sync
-gvfs-set-attribute ~/Sync/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/purple-folder-recent.svg
+gvfs-set-attribute ~/Sync/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/purple-folder-recent.svg
 # Shared Files (GShare)
 mkdir -p -v ~/Shared\ Files
-gvfs-set-attribute ~/Shared\ Files/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/purple-network.svg
+gvfs-set-attribute ~/Shared\ Files/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/purple-network.svg
 # SparkleShare (GitHub)
 mkdir -p -v ~/SparkleShare
-gvfs-set-attribute ~/SparkleShare/ metadata::custom-icon file:///usr/share/icons/Numix/48x48/places/orange-folder-projects.svg
+gvfs-set-attribute ~/SparkleShare/ metadata::custom-icon file:///usr/share/icons/Numix/48/places/orange-folder-projects.svg
 ##############################################################################################################################################################################################################################################################
 # Set Bookmarks
 echo file:///home/$USER/Copy Copy | tee ~/.config/gtk-3.0/bookmarks

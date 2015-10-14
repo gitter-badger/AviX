@@ -458,7 +458,7 @@ sudo cp -v /usr/share/applications/qasmixer.desktop /etc/xdg/autostart/
 sudo sed -i 's/Exec=qasmixer/Exec=qasmixer --tray/g' /etc/xdg/autostart/qasmixer.desktop
 # ~/.config/volti/config
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/rsea778f0olcfa2/config
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/data/config
 mkdir -p -v ~/.config/volti
 cp -v ~/Downloads/config ~/.config/volti/config
 # /usr/share/applications/unity-sound-panel.desktop

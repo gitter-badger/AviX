@@ -618,7 +618,7 @@ sudo rm -v /usr/share/unity-greeter/cof.png
 ##############################################################################################################################################################################################################################################################
 # LibreOffice M$Office
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/tspomef5va0vach/images_tango.zip
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/images_tango.zip
 sudo cp -v ~/Downloads/images_tango.zip /usr/share/libreoffice/share/config/
 ##############################################################################################################################################################################################################################################################
 # Vertex Firefox Theme

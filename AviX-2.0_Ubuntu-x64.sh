@@ -138,7 +138,7 @@ cd ~/Downloads
 wget -c http://ppa.launchpad.net/nilarimogard/webupd8/ubuntu/pool/main/s/syncthing-gtk/syncthing-gtk_0.7.6-1~webupd8~`lsb_release -c -s`0_amd64.deb
 sudo dpkg -i ~/Downloads/syncthing-gtk_0.7.6-1~webupd8~`lsb_release -c -s`0_amd64.deb
 sudo apt-get install -f -y
-wget -c https://www.dropbox.com/s/w3mz3j5be9j7nnn/config.json
+wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/data/config.json
 mkdir -p -v ~/.config/syncthing-gtk
 cp -v ~/Downloads/config.json ~/.config/syncthing-gtk/
 sudo cp /usr/share/applications/syncthing-gtk.desktop /etc/xdg/autostart/syncthing-daemon.desktop

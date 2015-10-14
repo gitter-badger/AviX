@@ -281,7 +281,7 @@ wget -c http://ffmpeg.zeranoe.com/builds/win64/shared/ffmpeg-1.2-win64-shared.7z
 cp -v ~/Downloads/ffmpeg-1.2-win64-shared/bin/*.dll ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/
 # LAME
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/6bvzgaog4auqf4c/lame_enc64.dll
+wget -c https://www.dropbox.com/s/cbuav0t80t7pdc8/lame_enc64.dll
 cp -v ~/Downloads/lame_enc64.dll ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/lame_enc64.dll
 # VST plugins
 cd ~/Downloads

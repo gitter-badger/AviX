@@ -285,7 +285,7 @@ wget -c https://www.dropbox.com/s/cbuav0t80t7pdc8/lame_enc64.dll
 cp -v ~/Downloads/lame_enc64.dll ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/lame_enc64.dll
 # VST plugins
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/cm09m8acr4xfw3y/plugins-vst.7z
+wget -c https://www.dropbox.com/s/cefuab61mqdds10/plugins-vst.7z
 7z x ~/Downloads/plugins-vst.zip
 mv -v ~/Downloads/plugins-vst/* ~/Plugins\ VST/
 ln -s ~/Plugins\ VST/ ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/Plugins/FX/

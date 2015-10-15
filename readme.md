@@ -23,6 +23,6 @@ Se você deseja contribuir com o <b>AviX</b>, por favor, entre em contato conosc
 
 <b>rauldipeas@avix.one</b>
 
-Não se esqueça de conferir a nossa <a href="http://avix.userecho.com/list/45980-base-de-conhecimento/?category=0" target="_blank"><b>base de conhecimento</b></a> para sanar suas dúvidas!
+Não se esqueça de conferir a nossa <a href="http://avix.userecho.com/list/45980-base-de-conhecimento/?category=0" target="_blank"><b>base de conhecimento</b></a> para aprender mais sobre o AviX.
 
 

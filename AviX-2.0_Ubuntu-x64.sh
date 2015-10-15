@@ -666,7 +666,7 @@ sudo rm -v /usr/share/applications/kde4/calligra*
 # /usr/share/applications/tuxguitar.desktop
 sudo sed -i 's/Name=tuxguitar/Name=TuxGuitar/g' /usr/share/applications/tuxguitar.desktop
 ##############################################################################################################################################################################################################################################################
-# Fix Numix Indicators
+# Fix Numix Indicators # NUMIX TMP_FIX
 sudo ln -s /usr/share/icons/Numix/16 /usr/share/icons/Numix/16x16
 sudo ln -s /usr/share/icons/Numix/22 /usr/share/icons/Numix/22x22
 sudo ln -s /usr/share/icons/Numix/24 /usr/share/icons/Numix/24x24

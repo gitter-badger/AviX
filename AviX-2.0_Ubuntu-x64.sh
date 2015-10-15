@@ -673,6 +673,12 @@ sudo ln -s /usr/share/icons/Numix/24 /usr/share/icons/Numix/24x24
 sudo ln -s /usr/share/icons/Numix-Light/16 /usr/share/icons/Numix-Light/16x16
 sudo ln -s /usr/share/icons/Numix-Light/22 /usr/share/icons/Numix-Light/22x22
 sudo ln -s /usr/share/icons/Numix-Light/24 /usr/share/icons/Numix-Light/24x24
+# SPARKLESHARE TMP_FIX
+cd ~/Downloads
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/sparkle-share-indicators.7z
+7z x sparkle-share-indicators.7z
+sudo cp -v ~/Downloads/sparkle-share-indicators/24/* /usr/share/icons/hicolor/24x24/status/
+sudo cp -v ~/Downloads/sparkle-share-indicators/48/* /usr/share/icons/hicolor/48x48/status/
 ##############################################################################################################################################################################################################################################################
 # Set Folder Icons
 # Dropbox

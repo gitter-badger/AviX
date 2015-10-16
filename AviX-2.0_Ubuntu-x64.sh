@@ -667,14 +667,14 @@ sudo rm -v /usr/share/applications/kde4/calligra*
 sudo sed -i 's/Name=tuxguitar/Name=TuxGuitar/g' /usr/share/applications/tuxguitar.desktop
 ##############################################################################################################################################################################################################################################################
 # Fix Numix Indicators # NUMIX TMP_FIX
-sudo ln -s /usr/share/icons/Numix/16 /usr/share/icons/Numix/16x16
-sudo ln -s /usr/share/icons/Numix/22 /usr/share/icons/Numix/22x22
-sudo ln -s /usr/share/icons/Numix/24 /usr/share/icons/Numix/24x24
-sudo ln -s /usr/share/icons/Numix-Light/16 /usr/share/icons/Numix-Light/16x16
-sudo ln -s /usr/share/icons/Numix-Light/22 /usr/share/icons/Numix-Light/22x22
-sudo ln -s /usr/share/icons/Numix-Light/24 /usr/share/icons/Numix-Light/24x24
-sudo rm -v /usr/share/icons/Numix/icon-theme.cache 
-sudo rm -v /usr/share/icons/Numix-Circle/icon-theme.cache
+#*sudo ln -s /usr/share/icons/Numix/16 /usr/share/icons/Numix/16x16
+#*sudo ln -s /usr/share/icons/Numix/22 /usr/share/icons/Numix/22x22
+#*sudo ln -s /usr/share/icons/Numix/24 /usr/share/icons/Numix/24x24
+#*sudo ln -s /usr/share/icons/Numix-Light/16 /usr/share/icons/Numix-Light/16x16
+#*sudo ln -s /usr/share/icons/Numix-Light/22 /usr/share/icons/Numix-Light/22x22
+#*sudo ln -s /usr/share/icons/Numix-Light/24 /usr/share/icons/Numix-Light/24x24
+#*sudo rm -v /usr/share/icons/Numix/icon-theme.cache 
+#*sudo rm -v /usr/share/icons/Numix-Circle/icon-theme.cache
 # SPARKLESHARE TMP_FIX
 cd ~/Downloads
 wget -c https://github.com/rauldipeas/AviX/raw/master/data/sparkle-share-indicators.7z

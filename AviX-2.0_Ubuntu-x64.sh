@@ -285,7 +285,7 @@ wget -c https://www.dropbox.com/s/cbuav0t80t7pdc8/lame_enc64.dll
 cp -v ~/Downloads/lame_enc64.dll ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/lame_enc64.dll
 # VST plugins
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/cefuab61mqdds10/plugins-vst.7z
+wget -c http://sourceforge.net/projects/avix/files/repository/data/tarball%20apps/plugins-vst.7z
 7z x ~/Downloads/plugins-vst.zip
 mv -v ~/Downloads/plugins-vst/* ~/Plugins\ VST/
 ln -s ~/Plugins\ VST/ ~/.wine/drive_c/Program\ Files/REAPER\ \(x64\)/Plugins/FX/
@@ -591,7 +591,7 @@ sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu Wily Werewolf (development branch)"/D
 sudo sed -i 's/-i\ -s/-d\ -s/g' /etc/default/grub
 # Plymouth theme
 cd ~/Downloads
-wget -c https://www.dropbox.com/s/ahxprokpv0ls6ed/avix-plymouth_2.0_all.deb
+wget -c http://sourceforge.net/projects/avix/files/repository/data/debian%20apps/avix-plymouth_2.0_all.deb
 sudo dpkg -i ~/Downloads/avix-plymouth_2.0_all.deb
 # Wallpaper
 cd ~/Downloads

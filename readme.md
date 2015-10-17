@@ -21,7 +21,7 @@ Você também pode obter suporte aravés do aplicativo <a href="https://apps.ubu
 
 Se você deseja contribuir com o <b>AviX</b>, por favor, entre em contato conosco pelo <b>e-mail</b>:
 
-<b>rauldipeas@avix.one</b>
+<b>rauldipeas@mail.com</b>
 
 Não se esqueça de conferir a nossa <a href="http://avix.userecho.com/list/45980-base-de-conhecimento/?category=0" target="_blank"><b>base de conhecimento</b></a> para aprender mais sobre o AviX.
 

@@ -22,7 +22,7 @@ Mudanças feitas pelo AviX no Ubuntu:
 		Oracle Java PPA(WebUpd8) #TRUSTY #VIVID #WILY
 		GIMP extras PPA #TRUSTY #VIVID #WILY
 		LibreOffice PPA #TRUSTY #VIVID #WILY
-		Haguichi PPA(VPN) #TRUSTY #VIVID# #WILY
+		Haguichi PPA(VPN) #TRUSTY #VIVID# #WIL
 
 	Repositórios extra:
 		KXStudio repositories(Aplicativos de áudio e vídeo) #TRUSTY #VIVID #WILY

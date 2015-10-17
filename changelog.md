@@ -86,7 +86,7 @@ Mudanças feitas pelo AviX no Ubuntu:
 		undistract-me (Notificações para comandos longos no terminal)
 		pidgin (Comunicador instantâneo com suporte multi-protocolo)
 		pidgin-skype (Suporte ao protocolo do Skype para o Pidgin)
-		pidgin-facebook (Suporte ao novo protocolo do Facebook para o Pidgin)
+		purple-facebook (Suporte ao novo protocolo do Facebook para o Pidgin)
 
 	Aplicativos de configuração do sistema:
 		system-config-samba (Configurações do servidor de compartilhamento na rede local SAMBA)

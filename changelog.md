@@ -85,6 +85,7 @@ Mudanças feitas pelo AviX no Ubuntu:
 		gshare (Compartilhamento de arquivos na rede local SAMBA/CIFS)
 		undistract-me (Notificações para comandos longos no terminal)
 		pidgin (Comunicador instantâneo com suporte multi-protocolo)
+		pidgin-exprefs (Configurações adicionais para o Pidgin)
 		pidgin-skype (Suporte ao protocolo do Skype para o Pidgin)
 		purple-facebook (Suporte ao novo protocolo do Facebook para o Pidgin)
 

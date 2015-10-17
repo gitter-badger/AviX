@@ -81,7 +81,7 @@ echo deb http://download.virtualbox.org/virtualbox/debian `lsb_release -c -s|sed
 cd ~/Downloads
 wget http://download.opensuse.org/repositories/home:jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/Release.key #WILY TMP_FIX
 sudo apt-key add - < Release.key  
-echo deb http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/ / | sudo tee /etc/apt/sources.list.d/pidgin-facebook-`lsb_release -c -s`.list #WILY TMP_FIX
+echo deb http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/ / | sudo tee /etc/apt/sources.list.d/purple-facebook-`lsb_release -c -s`.list #WILY TMP_FIX
 rm -v ~/Downloads/Release.key
 ##############################################################################################################################################################################################################################################################
 # Organize system kernels

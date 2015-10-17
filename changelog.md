@@ -30,7 +30,7 @@ Mudanças feitas pelo AviX no Ubuntu:
 		Spotify repository(Tocador de música online) #ALL
 		Syncthing repository(Sincronização local de arquivos) #ALL
 		VirtualBox repository(Virtualização) #TRUSTY #VIVID #WILY TMP_FIX
-		Pidgin-Facebook repository(Protocolo de comunicação)
+		Pidgin-Facebook repository(Protocolo de comunicação) #TRUSTY #VIVID #WILY TMP_FIX
 
 	Instalado kernel "lowlatency-lts-utopic" no Ubuntu Trusty e o kernel "lowlatency" no Ubuntu Vivid e no Ubuntu Wily.
 	

@@ -8,7 +8,7 @@ E junto com todas essas ferramentas excelentes, o <b>AviX</b> ainda conta com um
 
 <b>Seja livre, produza mais!</b>
 
-<b>http://avix.one</b>
+<b>http://avix.sf.net</b>
 
 Para instalar o <b>AviX</b> no <b>Ubuntu</b>, acesse <a href="http://avix.userecho.com/topic/957995-instalacao-do-avix-no-ubuntu-x64/" target="_blank"><b>este link</b></a>.
 

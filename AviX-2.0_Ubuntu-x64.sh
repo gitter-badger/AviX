@@ -620,6 +620,12 @@ sudo rm -v /usr/share/unity-greeter/cof.png
 cd ~/Downloads
 wget -c https://github.com/rauldipeas/AviX/raw/master/data/images_tango.zip
 sudo cp -v ~/Downloads/images_tango.zip /usr/share/libreoffice/share/config/
+
+##############################################################################################################################################################################################################################################################
+# Pidgin Numix Theme
+cd ~/Downloads
+wget -c
+sudo tar -vzxf pidgin.tar.gz -C /usr/share/pixmaps/
 ##############################################################################################################################################################################################################################################################
 # Vertex Firefox Theme
 killall -9 firefox

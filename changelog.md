@@ -83,6 +83,8 @@ Mudanças feitas pelo AviX no Ubuntu:
 		preload (Daemon auto adaptável para o pré carregamento de aplicativos)
 		gshare (Compartilhamento de arquivos na rede local SAMBA/CIFS)
 		undistract-me (Notificações para comandos longos no terminal)
+		pidgin (Comunicador instantâneo com suporte multi-protocolo)
+		pidgin-skype (Suporte ao protocolo do Skype para o Pidgin)
 
 	Aplicativos de configuração do sistema:
 		system-config-samba (Configurações do servidor de compartilhamento na rede local SAMBA)

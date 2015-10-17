@@ -63,6 +63,7 @@ cd ~/Downloads
 wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/Release.key #WILY TMP_FIX
 sudo apt-key add - < Release.key  
 echo deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/ / | sudo tee /etc/apt/sources.list.d/vertex-theme-`lsb_release -c -s`.list #WILY TMP_FIX
+rm -v ~/Downloads/Release.key
 # Spotify repository
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
@@ -81,6 +82,7 @@ cd ~/Downloads
 wget http://download.opensuse.org/repositories/home:jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/Release.key #WILY TMP_FIX
 sudo apt-key add - < Release.key  
 echo deb http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/ / | sudo tee /etc/apt/sources.list.d/pidgin-facebook-`lsb_release -c -s`.list #WILY TMP_FIX
+rm -v ~/Downloads/Release.key
 ##############################################################################################################################################################################################################################################################
 # Organize system kernels
 # Install lowlatency lernel

@@ -76,6 +76,11 @@ cd ~/Downloads
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc
 sudo apt-key add - < oracle_vbox.asc
 echo deb http://download.virtualbox.org/virtualbox/debian `lsb_release -c -s|sed 's/wily/vivid/g'` contrib | sudo tee /etc/apt/sources.list.d/virtualbox-`lsb_release -c -s`.list #WILY TMP_FIX
+# Pidgin-Facebook repository
+cd ~/Downloads
+wget http://download.opensuse.org/repositories/home:jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/Release.key #WILY TMP_FIX
+sudo apt-key add - < Release.key  
+echo deb http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/ / | sudo tee /etc/apt/sources.list.d/pidgin-facebook-`lsb_release -c -s`.list #WILY TMP_FIX
 ##############################################################################################################################################################################################################################################################
 # Organize system kernels
 # Install lowlatency lernel

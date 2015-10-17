@@ -254,7 +254,7 @@ Mudanças feitas pelo AviX no Ubuntu:
 		Logotipo do AviX nos detalhes do sistema
 		Remoção do logotipo do Ubuntu na tela de login
 		Tema do Microsoft Office no LibreOffice
-		Tema Numix para o Pidgin, para combinar com o tema de ícones do sistema
+		Tema Numix no Pidgin, para combinar com o tema de ícones do sistema
 		Tema Vertex escuro no Firefox, para combinar com o tema do sistema
 		Tema escuro para aplicativos específicos:
 			Deluge Torrent

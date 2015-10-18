@@ -536,6 +536,12 @@ echo 'synth.sample-rate=48000.0' | tee -a ~/.tuxguitar-1.2/plugins/tuxguitar-flu
 # ~/.tuxguitar-1.2/config.properties
 echo 'midi.port=tuxguitar-fluidsynth_/usr/share/sounds/sf2/FluidR3_GM.sf2' | tee -a ~/.tuxguitar-1.2/config.properties
 ##############################################################################################################################################################################################################################################################
+# Inkscape icon theme
+cd ~/Downloads
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/icons.svg.7z
+7z x ~/Downloads/icons.svg.7z
+sudo cp -v icons.svg /usr/share/inkscape/icons/
+##############################################################################################################################################################################################################################################################
 # KDEnLive Krita-Dark theme
 # ~/.kde/share/config/
 mkdir -p -v ~/.kde/share/config

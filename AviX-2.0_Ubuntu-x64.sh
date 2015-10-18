@@ -175,6 +175,11 @@ wget -c https://meocloud.pt/binaries/linux/amd64/meocloud-gui-latest_amd64_beta.
 sudo dpkg -i ~/Downloads/meocloud-gui-latest_amd64_beta.deb
 sudo apt-get install -f -y
 ##############################################################################################################################################################################################################################################################
+# Pidgin send screenshot plugin
+cd ~/Downloads
+wget -c /home/rauldipeas/Downloads/pidgin-sendscreenshot-0.8-3-amd64.deb
+sudo dpkg -i ~/Downloads/pidgin-sendscreenshot-0.8.3-amd64.deb
+##############################################################################################################################################################################################################################################################
 # Messenger
 cd ~/Downloads
 wget -c https://github.com/Aluxian/Facebook-Messenger-Desktop/releases/download/v1.4.3/Messenger_linux64.deb

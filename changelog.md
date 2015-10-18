@@ -205,7 +205,7 @@ Mudanças feitas pelo AviX no Ubuntu:
 		Configurações do player Parole
 		Configurações do GIMP
 		Configurações para o TuxGuitar, com suporte ao FluidSynth
-		Tema de ícones customizado para o inkscape
+		Tema de ícones customizado para o Inkscape
 		Tema Krita-Dark no KDEnLive
 		Tema Holo no OpenShot
 		Notificações pra comandos longos no terminal

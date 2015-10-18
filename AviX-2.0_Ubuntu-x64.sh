@@ -540,7 +540,8 @@ echo 'midi.port=tuxguitar-fluidsynth_/usr/share/sounds/sf2/FluidR3_GM.sf2' | tee
 cd ~/Downloads
 wget -c https://github.com/rauldipeas/AviX/raw/master/data/icons.svg.7z
 7z x ~/Downloads/icons.svg.7z
-sudo cp -v icons.svg /usr/share/inkscape/icons/
+mkdir -p -v ~/.config/inkscape/icons/
+cp -v icons.svg ~/.config/inkscape/icons/
 ##############################################################################################################################################################################################################################################################
 # KDEnLive Krita-Dark theme
 # ~/.kde/share/config/

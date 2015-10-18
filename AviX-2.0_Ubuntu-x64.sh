@@ -542,6 +542,7 @@ wget -c https://github.com/rauldipeas/AviX/raw/master/data/icons.svg.7z
 7z x ~/Downloads/icons.svg.7z
 mkdir -p -v ~/.config/inkscape/icons/
 cp -v ~/Downloads/icons.svg ~/.config/inkscape/icons/
+sudo sed -i 's/Icon=inkscape/Icon=inkscape-alt/g' /usr/share/applications/inkscape.desktop
 ##############################################################################################################################################################################################################################################################
 # KDEnLive Krita-Dark theme
 # ~/.kde/share/config/

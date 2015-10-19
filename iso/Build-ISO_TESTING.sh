@@ -286,3 +286,8 @@ echo '' | sudo tee -a image/isolinux/isolinux.txt
 echo 'For the default live system, enter "live".  To run memtest86+, enter "memtest"' | sudo tee -a image/isolinux/isolinux.txt
 echo '' | sudo tee -a image/isolinux/isolinux.txt
 echo '******************************************************************************' | sudo tee -a image/isolinux/isolinux.txt
+# Splash screen
+sudo apt-get install syslinux-utils
+printf "\x18" >emptyfile
+bmptoppm splash.bmp > splash.ppm
+ppmtolss16 '#ffffff=7' < splash.ppm > splash.rle

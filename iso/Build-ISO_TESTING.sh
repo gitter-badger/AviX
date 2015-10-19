@@ -175,7 +175,7 @@ sudo sed -i 's/-i\ -s/-d\ -s/g' /etc/default/grub
 # Plymouth theme
 cd /tmp
 wget -c http://sourceforge.net/projects/avix/files/repository/data/debian%20apps/avix-plymouth_2.0_all.deb
-sudo dpkg -i ~/Downloads/avix-plymouth_2.0_all.deb
+sudo dpkg -i /tmp/avix-plymouth_2.0_all.deb
 # Unity dash icon
 cd /tmp
 wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/artwork/launcher_bfb.png

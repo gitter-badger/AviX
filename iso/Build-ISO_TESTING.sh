@@ -277,12 +277,12 @@ sudo cp chroot/boot/initrd.img-*-lowlatency image/casper/initrd.gz
 cp /boot/memtest86+.bin image/install/memtest
 ##############################################################################################################################################################################################################################################################
 # Boot instructions for the AviX user
-echo 'splash.rle' | sudo tee image/isolinux
-echo '' | sudo tee -a image/isolinux
-echo '******************************************************************************' | sudo tee -a image/isolinux
-echo '' | sudo tee -a image/isolinux
-echo 'This is an AviX 2.0 Live CD.' | sudo tee -a image/isolinux
-echo '' | sudo tee -a image/isolinux
-echo 'For the default live system, enter "live".  To run memtest86+, enter "memtest"' | sudo tee -a image/isolinux
-echo '' | sudo tee -a image/isolinux
-echo '******************************************************************************' | sudo tee -a image/isolinux
+echo 'splash.rle' | sudo tee image/isolinux/isolinux.txt
+echo '' | sudo tee -a image/isolinux/isolinux.txt
+echo '******************************************************************************' | sudo tee -a image/isolinux/isolinux.txt
+echo '' | sudo tee -a image/isolinux/isolinux.txt
+echo 'This is an AviX 2.0 Live CD.' | sudo tee -a image/isolinux/isolinux.txt
+echo '' | sudo tee -a image/isolinux/isolinux.txt
+echo 'For the default live system, enter "live".  To run memtest86+, enter "memtest"' | sudo tee -a image/isolinux/isolinux.txt
+echo '' | sudo tee -a image/isolinux/isolinux.txt
+echo '******************************************************************************' | sudo tee -a image/isolinux/isolinux.txt

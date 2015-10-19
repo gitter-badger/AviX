@@ -267,3 +267,11 @@ umount -lf /dev/pts
 ##############################################################################################################################################################################################################################################################
 # Stop ChRoot environment
 exit
+##############################################################################################################################################################################################################################################################
+# Create CD image directory and populate it
+sudo apt-get install syslinux squashfs-tools genisoimage
+mkdir -p image/{casper,isolinux,install}
+sudo cp chroot/boot/vmlinuz-*-lowlatency .
+cp vmlinuz-*-lowlatency image/casper/vmlinuz
+sudo cp chroot/boot/initrd.img-*-lowlatency .
+cp initrd.img-*-lowlatency image/casper/initrd.gz

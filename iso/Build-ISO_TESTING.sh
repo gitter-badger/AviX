@@ -291,3 +291,26 @@ sudo apt-get install syslinux-utils
 printf "\x18" >emptyfile
 bmptoppm splash.bmp > splash.ppm
 ppmtolss16 '#ffffff=7' < splash.ppm > splash.rle
+##############################################################################################################################################################################################################################################################
+# Boot-loader configuration
+echo '
+DEFAULT live
+LABEL live
+  menu label ^Start or install Ubuntu Remix
+  kernel /casper/vmlinuz
+  append  file=/cdrom/preseed/ubuntu.seed boot=casper initrd=/casper/initrd.lz quiet splash --
+LABEL check
+  menu label ^Check CD for defects
+  kernel /casper/vmlinuz
+  append  boot=casper integrity-check initrd=/casper/initrd.lz quiet splash --
+LABEL memtest
+  menu label ^Memory test
+  kernel /install/memtest
+  append -
+LABEL hd
+  menu label ^Boot from first hard disk
+  localboot 0x80
+  append -
+DISPLAY isolinux.txt
+TIMEOUT 300
+PROMPT 1' | tee image/isolinux/isolinux.cfg

@@ -107,7 +107,7 @@ sudo apt-get dist-upgrade -y
 sudo apt-get install -y q4wine winbind wineasio playonlinux cadence pulseaudio-module-jack indicator-cpufreq oracle-java9-installer icedtea-plugin alsa-firmware
 ##############################################################################################################################################################################################################################################################
 # Install desktop apps
-sudo apt-get install -y nemo nemo-dropbox nemo-emblems nemo-share folder-color-nemo vertex-theme numix-icon-theme-circle deluge-gtk python-libtorrent parole qasmixer spotify-client libreoffice-style-tango shutter vinagre p7zip-rar rygel-preferences skype gtk2-engines-pixbuf:i386 unity-gtk2-module:i386 pyrenamer filezilla diodon liferea syncthing haguichi preload gshare undistract-me pidgin pidgin-extprefs pidgin-skype purple-facebook
+sudo apt-get install -y nemo nemo-dropbox nemo-emblems nemo-share folder-color-nemo vertex-theme numix-icon-theme-circle deluge-gtk python-libtorrent parole qasmixer spotify-client libreoffice-style-tango shutter vinagre p7zip-rar rygel-preferences skype gtk2-engines-pixbuf:i386 unity-gtk2-module:i386 pyrenamer filezilla diodon liferea syncthing haguichi preload gshare undistract-me pidgin pidgin-extprefs purple-facebook
 ##############################################################################################################################################################################################################################################################
 # Install config apps
 sudo apt-get install -y system-config-samba synaptic deborphan bleachbit grsync modem-manager-gui
@@ -179,6 +179,11 @@ sudo apt-get install -f -y
 cd ~/Downloads
 wget -c /home/rauldipeas/Downloads/pidgin-sendscreenshot-0.8-3-amd64.deb
 sudo dpkg -i ~/Downloads/pidgin-sendscreenshot-0.8.3-amd64.deb
+##############################################################################################################################################################################################################################################################
+# Pidgin Skype Web
+cd ~/Downloads
+wget -c https://sourceforge.net/projects/avix/files/repository/data/debian%20apps/skypeweb_1.0-1_amd64.deb
+sudo dpkg -i ~/Downloads/skypeweb_1.0-1_amd64.deb
 ##############################################################################################################################################################################################################################################################
 # Messenger
 cd ~/Downloads

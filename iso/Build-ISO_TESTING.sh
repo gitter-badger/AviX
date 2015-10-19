@@ -182,5 +182,16 @@ cd /tmp
 wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/artwork/launcher_bfb.png
 mkdir -p -v /usr/share/unity/icons
 cp -v /tmp/launcher_bfb.png /usr/share/unity/icons/launcher_bfb.png
-
+##############################################################################################################################################################################################################################################################
+# LibreOffice M$Office
+cd ~/Downloads
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/images_tango.zip
+sudo cp -v ~/Downloads/images_tango.zip /usr/share/libreoffice/share/config/
+##############################################################################################################################################################################################################################################################
+# Pidgin Numix Theme
+cd ~/Downloads
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/pidgin.tar.gz
+sudo tar -vzxf pidgin.tar.gz -C /usr/share/pixmaps/
+##############################################################################################################################################################################################################################################################
+# Install graphic installer
 apt-get install ubiquity-frontend-gtk

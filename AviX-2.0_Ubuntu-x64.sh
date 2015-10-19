@@ -600,7 +600,7 @@ sudo cp -R -v ~/Downloads/apt.conf /etc/apt/apt.conf
 ##############################################################################################################################################################################################################################################################
 # AviX branding
 # /etc/lsb-release
-sudo sed -i 's/DISTRIB_DESCRIPTION="`lsb_release -d -s`"/DISTRIB_DESCRIPTION="AviX2.0"/g' /etc/lsb-release
+sudo sed -i "s/`lsb_release -d -s`/AviX 2.0/g" /etc/lsb-release
 # /etc/default/grub
 sudo sed -i 's/-i\ -s/-d\ -s/g' /etc/default/grub
 # Plymouth theme

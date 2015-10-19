@@ -74,34 +74,34 @@ sudo add-apt-repository -y ppa:webupd8team/haguichi
 ##############################################################################################################################################################################################################################################################
 # Extra repositories
 # KXStudio repositories #TRUSTY #VIVID #WILY
-cd ~/tmp
+cd /tmp
 wget https://launchpad.net/~kxstudio-debian/+archive/kxstudio/+files/kxstudio-repos_9.2.1~kxstudio1_all.deb
-sudo dpkg -i ~/tmp/kxstudio-repos_9.2.1~kxstudio1_all.deb
+sudo dpkg -i /tmp/kxstudio-repos_9.2.1~kxstudio1_all.deb
 # Vertex theme repository #TRUSTY #VIVID
-cd ~/tmp
+cd /tmp
 wget http://download.opensuse.org/repositories/home:Horst3180/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/Release.key #WILY TMP_FIX
 sudo apt-key add - < Release.key  
 echo deb http://download.opensuse.org/repositories/home:/Horst3180/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/ / | sudo tee /etc/apt/sources.list.d/vertex-theme-`lsb_release -c -s`.list #WILY TMP_FIX
-rm -v ~/tmp/Release.key
+rm -v /tmp/Release.key
 # Spotify repository
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys D2C19886
 echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
 # Syncthing repository
-cd ~/tmp
+cd /tmp
 wget -c https://syncthing.net/release-key.txt
 sudo apt-key add - < release-key.txt
 echo deb http://apt.syncthing.net/ syncthing release | sudo tee /etc/apt/sources.list.d/syncthing-release.list
 # VirtualBox repository
-cd ~/tmp
+cd /tmp
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc
 sudo apt-key add - < oracle_vbox.asc
 echo deb http://download.virtualbox.org/virtualbox/debian `lsb_release -c -s|sed 's/wily/vivid/g'` contrib | sudo tee /etc/apt/sources.list.d/virtualbox-`lsb_release -c -s`.list #WILY TMP_FIX
 # Purple-Facebook repository
-cd ~/tmp
+cd /tmp
 wget http://download.opensuse.org/repositories/home:jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/Release.key #WILY TMP_FIX
 sudo apt-key add - < Release.key  
 echo deb http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/ / | sudo tee /etc/apt/sources.list.d/purple-facebook-`lsb_release -c -s`.list #WILY TMP_FIX
-rm -v ~/tmp/Release.key
+rm -v /tmp/Release.key
 ##############################################################################################################################################################################################################################################################
 # DBus configuration
 apt-get install -y dbus

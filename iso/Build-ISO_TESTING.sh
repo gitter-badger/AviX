@@ -338,3 +338,12 @@ echo '#define DISKNUM  1' | sudo tee -a image/README.diskdefines
 echo '#define DISKNUM1  1' | sudo tee -a image/README.diskdefines
 echo '#define TOTALNUM  0' | sudo tee -a image/README.diskdefines
 echo '#define TOTALNUM0  1' | sudo tee -a image/README.diskdefines
+##############################################################################################################################################################################################################################################################
+# Recognition as an Ubuntu Remix
+touch image/ubuntu
+mkdir image/.disk
+touch base_installable
+echo "full_cd/single" > cd_type
+echo "AviX 2.0" > info  # Update version number to match your OS version
+echo "http://migre.me/rR6Sf" > release_notes_url
+cd ../..

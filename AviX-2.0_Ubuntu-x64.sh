@@ -600,13 +600,7 @@ sudo cp -R -v ~/Downloads/apt.conf /etc/apt/apt.conf
 ##############################################################################################################################################################################################################################################################
 # AviX branding
 # /etc/lsb-release
-sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu 14.04 LTS"/DISTRIB_DESCRIPTION="AviX 2.0"/g' /etc/lsb-release
-sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu 14.04.1 LTS"/DISTRIB_DESCRIPTION="AviX 2.0"/g' /etc/lsb-release
-sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu 14.04.2 LTS"/DISTRIB_DESCRIPTION="AviX 2.0"/g' /etc/lsb-release
-sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu 14.04.3 LTS"/DISTRIB_DESCRIPTION="AviX 2.0"/g' /etc/lsb-release
-sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu 15.04"/DISTRIB_DESCRIPTION="AviX 2.0"/g' /etc/lsb-release
-sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu 15.10"/DISTRIB_DESCRIPTION="AviX 2.0"/g' /etc/lsb-release
-sudo sed -i 's/DISTRIB_DESCRIPTION="Ubuntu Wily Werewolf (development branch)"/DISTRIB_DESCRIPTION="AviX 2.0"/g' /etc/lsb-release #WILY TMP_FIX
+sudo sed -i 's/DISTRIB_DESCRIPTION="`lsb_release -d -s`"/DISTRIB_DESCRIPTION="AviX2.0"/g' /etc/lsb-release
 # /etc/default/grub
 sudo sed -i 's/-i\ -s/-d\ -s/g' /etc/default/grub
 # Plymouth theme

@@ -271,7 +271,16 @@ exit
 # Create CD image directory and populate it
 sudo apt-get install syslinux squashfs-tools genisoimage
 mkdir -p image/{casper,isolinux,install}
-sudo cp chroot/boot/vmlinuz-*-lowlatency .
-cp vmlinuz-*-lowlatency image/casper/vmlinuz
-sudo cp chroot/boot/initrd.img-*-lowlatency .
-cp initrd.img-*-lowlatency image/casper/initrd.gz
+sudo cp chroot/boot/vmlinuz-*-lowlatency image/casper/vmlinuz
+sudo cp chroot/boot/initrd.img-*-lowlatency image/casper/initrd.gz
+##############################################################################################################################################################################################################################################################
+# Boot instructions for the AviX user
+echo 'splash.rle' | sudo tee image/isolinux
+echo '' | sudo tee -a image/isolinux
+echo '******************************************************************************' | sudo tee -a image/isolinux
+echo '' | sudo tee -a image/isolinux
+echo 'This is an AviX 2.0 Live CD.' | sudo tee -a image/isolinux
+echo '' | sudo tee -a image/isolinux
+echo 'For the default live system, enter "live".  To run memtest86+, enter "memtest"' | sudo tee -a image/isolinux
+echo '' | sudo tee -a image/isolinux
+echo '******************************************************************************' | sudo tee -a image/isolinux

@@ -11,8 +11,14 @@ sudo debootstrap --arch=amd64 `lsb_release -c -s` chroot
 sudo cp /etc/hosts chroot/etc/hosts
 sudo cp /etc/resolv.conf chroot/etc/resolv.conf
 sudo cp /etc/apt/sources.list chroot/etc/apt/sources.list
-
-
+##############################################################################################################################################################################################################################################################
+# Start chroot environment
+sudo chroot chroot
+mount none -t proc /proc
+mount none -t sysfs /sys
+mount none -t devpts /dev/pts
+export HOME=/root
+export LC_ALL=C
 ##############################################################################################################################################################################################################################################################
 # No password on sudo
 # /etc/sudoers.d/avix

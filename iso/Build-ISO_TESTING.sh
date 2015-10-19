@@ -179,4 +179,5 @@ sudo dpkg -i /tmp/avix-plymouth_2.0_all.deb
 # Unity dash icon
 cd /tmp
 wget -c https://raw.githubusercontent.com/rauldipeas/AviX/master/artwork/launcher_bfb.png
+mkdir -p -v /usr/share/unity/icons
 sudo cp -v /tmp/launcher_bfb.png /usr/share/unity/icons/launcher_bfb.png

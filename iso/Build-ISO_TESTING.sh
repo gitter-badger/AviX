@@ -269,11 +269,11 @@ umount -lf /dev/pts
 exit
 ##############################################################################################################################################################################################################################################################
 # Create CD image directory and populate it
-sudo apt-get install syslinux squashfs-tools genisoimage
+sudo apt-get install syslinux squashfs-tools genisoimage isolinux
 mkdir -p image/{casper,isolinux,install}
 sudo cp chroot/boot/vmlinuz-*-lowlatency image/casper/vmlinuz
 sudo cp chroot/boot/initrd.img-*-lowlatency image/casper/initrd.gz
-# cp /usr/lib/syslinux/isolinux.bin image/isolinux/ NEEDS_FIX
+cp /usr/lib/ISOLINUX/isolinux.bin image/isolinux/
 cp /boot/memtest86+.bin image/install/memtest
 ##############################################################################################################################################################################################################################################################
 # Boot instructions for the AviX user
@@ -352,3 +352,8 @@ cd ../..
 sudo -s
 (cd image && find . -type f -print0 | xargs -0 md5sum | grep -v "\./md5sum.txt" > md5sum.txt)
 exit
+##############################################################################################################################################################################################################################################################
+# Create ISO image for a live CD
+cd image
+sudo mkisofs -r -V "$IMAGE_NAME" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o ../ubuntu-remix.iso .
+cd ..

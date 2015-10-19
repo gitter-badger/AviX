@@ -141,3 +141,38 @@ sudo apt-get install -y acetoneiso gimp gimp-plugin-registry inkscape simplescre
 ##############################################################################################################################################################################################################################################################
 # Install XFCE desktop apps
 sudo apt-get install -y xfce4-session xfce4-panel xfce4-whiskermenu-plugin xfce4-indicator-plugin volti xfwm4 compton xscreensaver
+##############################################################################################################################################################################################################################################################
+# Remove orphaned packages 2x and keep libgcrypt11 for Spotify
+sudo deborphan | xargs sudo apt-get -y remove --purge
+sudo deborphan | xargs sudo apt-get -y remove --purge
+sudo apt-get install -y libgcrypt11 #SPOTIFY TMP_FIX
+# Purge autoremoved apps
+sudo apt-get autoremove --purge -y
+##############################################################################################################################################################################################################################################################
+# XFCE desktop configs
+# ~/.config/xfce4 + ~/.config/compton.conf + ~/.config/Trolltech.conf
+cd ~/Downloads
+wget -c https://github.com/rauldipeas/AviX/raw/master/data/xfce%2Bcompton%2Bqtconfig-settings.zip
+unzip ~/Downloads/xfce+compton+qtconfig-settings.zip
+cp -R -v ~/Downloads/xfce+compton+qtconfig-settings/* ~/.config/
+# /etc/xdg/autostart/qasmixer.desktop #XFCE TMP_FIX
+echo '' | sudo tee -a /etc/xdg/autostart/qasmixer.desktop
+echo 'OnlyShowIn=Unity;' | sudo tee -a /etc/xdg/autostart/qasmixer.desktop
+# /etc/xdg/autostart/vino-server.desktop #XFCE TMP_FIX
+sudo sed -i 's/OnlyShowIn=GNOME;Unity;/OnlyShowIn=GNOME;Unity;XFCE;/g' /etc/xdg/autostart/vino-server.desktop
+# /etc/xdg/autostart/haguichi-autostart.desktop #XFCE TMP_FIX
+echo '' | sudo tee -a /etc/xdg/autostart/haguichi-autostart.desktop
+echo 'OnlyShowIn=Unity;' | sudo tee -a /etc/xdg/autostart/haguichi-autostart.desktop
+##############################################################################################################################################################################################################################################################
+# Install bootloader
+apt-get install -y grub2 plymouth-x11
+##############################################################################################################################################################################################################################################################
+# AviX branding
+# /etc/lsb-release
+sudo sed -i "s/`lsb_release -d -s`/AviX 2.0/g" /etc/lsb-release
+# /etc/default/grub
+sudo sed -i 's/-i\ -s/-d\ -s/g' /etc/default/grub
+# Plymouth theme
+cd ~/Downloads
+wget -c http://sourceforge.net/projects/avix/files/repository/data/debian%20apps/avix-plymouth_2.0_all.deb
+sudo dpkg -i ~/Downloads/avix-plymouth_2.0_all.deb

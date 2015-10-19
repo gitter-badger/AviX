@@ -8,7 +8,7 @@
 # No password on sudo
 # /etc/sudoers.d/avix
 sudo touch /etc/sudoers.d/avix
-echo '%sudo ALL=NOPASSWD: ALL'|sudo tee /etc/sudoers.d/avix
+echo '%sudo ALL=NOPASSWD: ALL' | sudo tee /etc/sudoers.d/avix
 sudo chmod 0440 -v /etc/sudoers.d/avix
 ##############################################################################################################################################################################################################################################################
 # Add user in audio group

@@ -184,14 +184,54 @@ mkdir -p -v /usr/share/unity/icons
 cp -v /tmp/launcher_bfb.png /usr/share/unity/icons/launcher_bfb.png
 ##############################################################################################################################################################################################################################################################
 # LibreOffice M$Office
-cd ~/Downloads
+cd /tmp
 wget -c https://github.com/rauldipeas/AviX/raw/master/data/images_tango.zip
-sudo cp -v ~/Downloads/images_tango.zip /usr/share/libreoffice/share/config/
+sudo cp -v tmp/images_tango.zip /usr/share/libreoffice/share/config/
 ##############################################################################################################################################################################################################################################################
 # Pidgin Numix Theme
 cd ~/Downloads
 wget -c https://github.com/rauldipeas/AviX/raw/master/data/pidgin.tar.gz
 sudo tar -vzxf pidgin.tar.gz -C /usr/share/pixmaps/
 ##############################################################################################################################################################################################################################################################
+# Dark-Theme
+sudo mkdir -p -v /opt/dark-theme/share/themes
+sudo ln -s -v /usr/share/themes/Vertex-Dark /opt/dark-theme/share/themes/Vertex
+##############################################################################################################################################################################################################################################################
+# Arquivos de configuração dark-theme
+# ~/.config/autostart/deluge.desktop + /usr/share/applications/deluge.desktop
+sudo sed -i 's/Exec=deluge-gtk %U/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme" deluge-gtk %U/g' /usr/share/applications/deluge.desktop
+# /usr/share/applications/gimp.desktop
+sudo sed -i 's/Exec=gimp-2.8 %U/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme" gimp-2.8 %U/g' /usr/share/applications/gimp.desktop
+# /usr/share/applications/inkscape.desktop
+sudo sed -i 's/Exec=inkscape %F/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme" inkscape %F/g' /usr/share/applications/inkscape.desktop
+# /usr/share/applications/openlp.desktop
+sudo sed -i 's/Exec=openlp %F/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme" openlp %F/g' /usr/share/applications/openlp.desktop
+# /usr/share/applications/rawtherapee.desktop
+sudo sed -i 's/Exec=rawtherapee %f/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme\" rawtherapee %f/g' /usr/share/applications/rawtherapee.desktop
+# /usr/share/applications/kde4/kdenlive.desktop
+sudo sed -i 's/Exec=kdenlive %i -caption %c %u/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme\" kdenlive %i -caption %c %u/g' /usr/share/applications/kde4/kdenlive.desktop
+# /usr/share/applications/openshot.desktop
+sudo sed -i 's/Exec=openshot %F/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme\" openshot %F/g' /usr/share/applications/openshot.desktop
+# /usr/share/applications/shutter.desktop
+sudo sed -i 's/Exec=shutter/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme\" shutter/g' /usr/share/applications/shutter.desktop
+# /usr/share/applications/kde4/quassel.desktop
+sudo sed -i 's/Exec=quassel/Exec=env GTK_DATA_PREFIX="\/opt\/dark-theme\" quassel/g' /usr/share/`lsb_release -c -s|sed 's/trusty/applications\/kde4/g'|sed 's/vivid/applications/g'|sed 's/wily/applications/g'`/quassel.desktop
+sudo sed -i 's/TryExec=env GTK_DATA_PREFIX="\/opt\/dark-theme\" quassel/TryExec=quassel/g' /usr/share/`lsb_release -c -s|sed 's/trusty/applications\/kde4/g'|sed 's/vivid/applications/g'|sed 's/wily/applications/g'`/quassel.desktop
+##############################################################################################################################################################################################################################################################
+# Shortcut fix
+# /usr/share/applications/nemo.desktop
+sudo sed -i 's/Name=Open a New Window/Name=Abrir uma nova janela/g' /usr/share/applications/nemo.desktop
+# /usr/share/applications/pyrenamer.desktop
+sudo sed -i 's/Icon\=\/usr\/share\/pyrenamer\/pyrenamer.png/Icon\=pyrenamer/g' /usr/share/applications/pyrenamer.desktop
+# /usr/share/applications/xdiagnose.desktop
+sudo sed -i 's/Icon=\/usr\/share\/xdiagnose\/icons\/microscope.svg/Icon=xdiagnose/g' /usr/share/applications/xdiagnose.desktop
+# /usr/share/applications/webbrowser-app.desktop
+sudo sed -i 's/Icon=\/usr\/share\/webbrowser-app\/webbrowser-app.png/Icon=webbrowser-app/g' /usr/share/applications/webbrowser-app.desktop
+# /usr/share/applications/kde4/calligra*
+sudo rm -v /usr/share/applications/kde4/calligra*
+# /usr/share/applications/tuxguitar.desktop
+sudo sed -i 's/Name=tuxguitar/Name=TuxGuitar/g' /usr/share/applications/tuxguitar.desktop
+
+##############################################################################################################################################################################################################################################################
 # Install graphic installer
-apt-get install ubiquity-frontend-gtk
+apt-get install -y ubiquity-frontend-gtk

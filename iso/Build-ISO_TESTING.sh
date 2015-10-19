@@ -189,9 +189,9 @@ wget -c https://github.com/rauldipeas/AviX/raw/master/data/images_tango.zip
 sudo cp -v tmp/images_tango.zip /usr/share/libreoffice/share/config/
 ##############################################################################################################################################################################################################################################################
 # Pidgin Numix Theme
-cd ~/Downloads
+cd /tmp
 wget -c https://github.com/rauldipeas/AviX/raw/master/data/pidgin.tar.gz
-sudo tar -vzxf pidgin.tar.gz -C /usr/share/pixmaps/
+sudo tar -vzxf /tmp/pidgin.tar.gz -C /usr/share/pixmaps/
 ##############################################################################################################################################################################################################################################################
 # Dark-Theme
 sudo mkdir -p -v /opt/dark-theme/share/themes

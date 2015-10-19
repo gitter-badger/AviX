@@ -14,9 +14,12 @@ Para instalar o <b>AviX</b> no <b>Ubuntu</b>, acesse <a href="http://avix.userec
 
 Para saber mais sobre as modificações feitas no <b>Ubuntu</b>, acesse o nosso <a href="http://avix.userecho.com/topic/961338-/" target="_blank"><b>registro de mudanças</b></a>.
 
-Suporte técnico através do <b>IRC</b> no canal <a href="https://kiwiirc.com/client?settings=139187d472e4257e0f7e30ffe5ccebfb" target="_blank"><b>#AviX</b></a>. 
+Para contratar o suporte técnico personalizado do <b>AviX</b>, acesse <a href="https://avix.userecho.com/topic/974883-/" target="_blank"><b>este link</b></a>.
 
-Você também pode obter suporte aravés do aplicativo <a href="https://apps.ubuntu.com/cat/applications/quassel/" target="_blank"><b>Quassel</b></a>.
+Suporte técnico gratuito através do <b>IRC</b> no canal <a href="https://kiwiirc.com/client?settings=139187d472e4257e0f7e30ffe5ccebfb" target="_blank"><b>#AviX</b></a>.
+
+Você também pode obter suporte técnico gratuito através do aplicativo <a href="apt://quassel"><b>Quassel</b></a>.</p>
+
 
 
 Se você deseja contribuir com o <b>AviX</b>, por favor, entre em contato conosco pelo <b>e-mail</b>:

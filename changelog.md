@@ -86,7 +86,6 @@ Mudanças feitas pelo AviX no Ubuntu:
 		undistract-me (Notificações para comandos longos no terminal)
 		pidgin (Comunicador instantâneo com suporte multi-protocolo)
 		pidgin-exprefs (Configurações adicionais para o Pidgin)
-		pidgin-skype (Suporte ao protocolo do Skype para o Pidgin)
 		purple-facebook (Suporte ao novo protocolo do Facebook para o Pidgin)
 
 	Aplicativos de configuração do sistema:
@@ -179,6 +178,7 @@ Mudanças feitas pelo AviX no Ubuntu:
 		Copy (Sincronização de arquivos na núvem)
 		MEOCloud (Sincronização de arquivos na núvem)
 		Pidgin send screenshot (Envio de capturas de tela para o Pidgin)
+		Skype Web (Suporte ao protocolo do Skype HTTP para o Pidgin)
 		Messenger (Comunicador instantâneo para o Facebook)
 		Quassel (Comunicador instantâneo para o IRC)
 		CGRU Afanasy (Gerenciador de fazendas de renderização de vídeo)

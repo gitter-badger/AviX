@@ -347,3 +347,8 @@ echo "full_cd/single" > cd_type
 echo "AviX 2.0" > info  # Update version number to match your OS version
 echo "http://migre.me/rR6Sf" > release_notes_url
 cd ../..
+##############################################################################################################################################################################################################################################################
+# Calculate MD5
+sudo -s
+(cd image && find . -type f -print0 | xargs -0 md5sum | grep -v "\./md5sum.txt" > md5sum.txt)
+exit

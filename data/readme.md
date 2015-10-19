@@ -1,1 +1,1 @@
-Estes são arquivos de dados baixados pelo AviX durante a instalação.
+Estes são arquivos baixados pelo AviX durante a instalação.

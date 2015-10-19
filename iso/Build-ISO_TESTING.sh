@@ -273,6 +273,8 @@ sudo apt-get install syslinux squashfs-tools genisoimage
 mkdir -p image/{casper,isolinux,install}
 sudo cp chroot/boot/vmlinuz-*-lowlatency image/casper/vmlinuz
 sudo cp chroot/boot/initrd.img-*-lowlatency image/casper/initrd.gz
+# cp /usr/lib/syslinux/isolinux.bin image/isolinux/ NEEDS_FIX
+cp /boot/memtest86+.bin image/install/memtest
 ##############################################################################################################################################################################################################################################################
 # Boot instructions for the AviX user
 echo 'splash.rle' | sudo tee image/isolinux

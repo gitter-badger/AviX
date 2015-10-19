@@ -178,7 +178,7 @@ Mudanças feitas pelo AviX no Ubuntu:
 		Copy (Sincronização de arquivos na núvem)
 		MEOCloud (Sincronização de arquivos na núvem)
 		Pidgin send screenshot (Envio de capturas de tela para o Pidgin)
-		Skype Web (Suporte ao protocolo do Skype HTTP para o Pidgin)
+		Skype Web (Suporte ao protocolo do Skype Web para o Pidgin)
 		Messenger (Comunicador instantâneo para o Facebook)
 		Quassel (Comunicador instantâneo para o IRC)
 		CGRU Afanasy (Gerenciador de fazendas de renderização de vídeo)

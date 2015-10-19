@@ -323,3 +323,18 @@ for i in $REMOVE
 do
         sudo sed -i "/${i}/d" image/casper/filesystem.manifest-desktop
 done
+##############################################################################################################################################################################################################################################################
+# Create manifest
+sudo mksquashfs chroot image/casper/filesystem.squashfs
+printf $(sudo du -sx --block-size=1 chroot | cut -f1) > image/casper/filesystem.size
+##############################################################################################################################################################################################################################################################
+# Create diskdefines
+echo '#define DISKNAME  Ubuntu Remix' | sudo tee image/README.diskdefines
+echo '#define TYPE  binary' | sudo tee -a image/README.diskdefines
+echo '#define TYPEbinary  1' | sudo tee -a image/README.diskdefines
+echo '#define ARCH  amd64' | sudo tee -a image/README.diskdefines
+echo '#define ARCHamd64  1' | sudo tee -a image/README.diskdefines
+echo '#define DISKNUM  1' | sudo tee -a image/README.diskdefines
+echo '#define DISKNUM1  1' | sudo tee -a image/README.diskdefines
+echo '#define TOTALNUM  0' | sudo tee -a image/README.diskdefines
+echo '#define TOTALNUM0  1' | sudo tee -a image/README.diskdefines

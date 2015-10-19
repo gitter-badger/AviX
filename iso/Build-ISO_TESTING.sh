@@ -258,3 +258,9 @@ sudo cp -v /tmp/sparkle-share-indicators/48/* /usr/share/icons/hicolor/48x48/sta
 apt-get install -y ubiquity-frontend-gtk
 # Cleanup the ChRoot environment
 rm -r /var/lib/dbus/machine-id
+apt-get clean
+rm -rf /tmp/*
+rm -r /etc/resolv.conf
+umount -lf /proc
+umount -lf /sys
+umount -lf /dev/pts

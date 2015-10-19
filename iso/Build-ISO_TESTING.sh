@@ -253,7 +253,8 @@ wget -c https://github.com/rauldipeas/AviX/raw/master/data/sparkle-share-indicat
 7z x sparkle-share-indicators.7z
 sudo cp -v /tmp/sparkle-share-indicators/24/* /usr/share/icons/hicolor/24x24/status/
 sudo cp -v /tmp/sparkle-share-indicators/48/* /usr/share/icons/hicolor/48x48/status/
-
 ##############################################################################################################################################################################################################################################################
 # Install graphic installer
 apt-get install -y ubiquity-frontend-gtk
+# Cleanup the ChRoot environment
+rm -r /var/lib/dbus/machine-id

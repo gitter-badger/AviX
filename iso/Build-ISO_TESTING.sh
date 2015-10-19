@@ -20,6 +20,11 @@ mount none -t devpts /dev/pts
 export HOME=/root
 export LC_ALL=C
 ##############################################################################################################################################################################################################################################################
+# DBus configuration
+apt-get install -y dbus
+dbus-uuidgen > /var/lib/dbus/machine-id
+dpkg-divert --local --rename --add /sbin/initctl
+##############################################################################################################################################################################################################################################################
 # No password on sudo
 # /etc/sudoers.d/avix
 touch /etc/sudoers.d/avix
@@ -109,11 +114,6 @@ wget http://download.opensuse.org/repositories/home:jgeboski/xUbuntu_`lsb_releas
 apt-key add - < Release.key  
 echo deb http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_`lsb_release -r -s|sed 's/15.10/15.04/g'`/ / | tee /etc/apt/sources.list.d/purple-facebook-`lsb_release -c -s`.list #WILY TMP_FIX
 rm -v /tmp/Release.key
-##############################################################################################################################################################################################################################################################
-# DBus configuration
-apt-get install -y dbus
-dbus-uuidgen > /var/lib/dbus/machine-id
-dpkg-divert --local --rename --add /sbin/initctl
 ##############################################################################################################################################################################################################################################################
 # Update repositories
 apt-get update

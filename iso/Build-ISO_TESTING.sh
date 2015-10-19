@@ -3,7 +3,7 @@
 # Install debootstrap
 sudo apt-get install debootstrap
 ##############################################################################################################################################################################################################################################################
-# Create chroot environment
+# Create ChRoot environment
 mkdir -p -v ~/SparkleShare/iso/work/chroot
 sudo debootstrap --arch=amd64 `lsb_release -c -s` chroot
 ##############################################################################################################################################################################################################################################################
@@ -12,7 +12,7 @@ sudo cp /etc/hosts chroot/etc/hosts
 sudo cp /etc/resolv.conf chroot/etc/resolv.conf
 sudo cp /etc/apt/sources.list chroot/etc/apt/sources.list
 ##############################################################################################################################################################################################################################################################
-# Start chroot environment
+# Start ChRoot environment
 sudo chroot chroot
 mount none -t proc /proc
 mount none -t sysfs /sys

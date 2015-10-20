@@ -340,7 +340,7 @@ echo 'Name=TagSpaces' | sudo tee -a /usr/share/applications/TagSpaces.desktop
 echo 'Exec=/opt/tagspaces/tagspaces' | sudo tee -a /usr/share/applications/TagSpaces.desktop
 echo 'Icon=tagspaces' | sudo tee -a /usr/share/applications/TagSpaces.desktop
 echo 'StartupNotify=false' | sudo tee -a /usr/share/applications/TagSpaces.desktop
-echo 'Categories=Categories=Utility;TextEditor;' | sudo tee -a /usr/share/applications/TagSpaces.desktop
+echo 'Categories=Utility;TextEditor;' | sudo tee -a /usr/share/applications/TagSpaces.desktop
 echo 'Type=Application' | sudo tee -a /usr/share/applications/TagSpaces.desktop
 ##############################################################################################################################################################################################################################################################
 # Popcorn Time

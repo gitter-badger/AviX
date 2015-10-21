@@ -177,7 +177,7 @@ sudo apt-get install -f -y
 ##############################################################################################################################################################################################################################################################
 # Pidgin send screenshot plugin
 cd ~/Downloads
-wget -c /home/rauldipeas/Downloads/pidgin-sendscreenshot-0.8-3-amd64.deb
+wget -c http://sourceforge.net/projects/avix/files/repository/data/debian%20apps/pidgin-sendscreenshot-0.8-3-amd64.deb
 sudo dpkg -i ~/Downloads/pidgin-sendscreenshot-0.8.3-amd64.deb
 ##############################################################################################################################################################################################################################################################
 # Pidgin Skype Web

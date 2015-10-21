@@ -123,7 +123,7 @@ sudo apt-get install -y acetoneiso gimp gimp-plugin-registry inkscape simplescre
 sudo apt-get install -y xfce4-session xfce4-panel xfce4-whiskermenu-plugin xfce4-indicator-plugin volti xfwm4 compton xscreensaver
 ##############################################################################################################################################################################################################################################################
 # Removed default apps
-sudo apt-get purge -y xcursor-themes nautilus transmission-common totem-common gnome-mahjongg gnome-sudoku gnome-mines aisleriot empathy gnome-screenshot usb-creator-common remmina-common plymouth-theme-ubuntu-logo plymouth-theme-ubuntu-text plymouth-label software-center-aptdaemon-plugins rhythmbox-data rhythmbox
+sudo apt-get purge -y xcursor-themes nautilus transmission-common totem-common gnome-mahjongg gnome-sudoku gnome-mines aisleriot empathy gnome-screenshot usb-creator-common remmina-common plymouth-theme-ubuntu-logo plymouth-theme-ubuntu-text plymouth-label software-center-aptdaemon-plugins
 # Removed extra apps
 sudo apt-get purge -y xfdesktop4-data xfce4-volumed meterbridge qsynth sni-qt:i386 steadyflow
 # Purge autoremoved apps

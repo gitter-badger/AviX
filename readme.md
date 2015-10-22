@@ -29,3 +29,6 @@ Se você deseja contribuir com o <b>AviX</b>, por favor, entre em contato conosc
 Não se esqueça de conferir a nossa <a href="http://avix.userecho.com/list/45980-base-de-conhecimento/?category=0" target="_blank"><b>base de conhecimento</b></a> para aprender mais sobre o AviX.
 
 
+
+
+[![Join the chat at https://gitter.im/rauldipeas/AviX](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/rauldipeas/AviX?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
